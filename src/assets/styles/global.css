@@ -8,6 +8,7 @@ html, body, #root {
   justify-content: center;
   color: var(--color-box-base);
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 body, 
@@ -19,8 +20,17 @@ textarea {
   font-weight: 500;
 }
 
+input {
+  height: 40px;
+  padding: 5px;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
 button {
   cursor: pointer;
+  transition: all 250ms ease;
 }
 
 .container {
