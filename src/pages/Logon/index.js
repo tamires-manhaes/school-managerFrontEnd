@@ -15,8 +15,8 @@ export default function Logon(){
         <form>
           <input type="email" placeholder="email" required/>
           <input type="password" placeholder="password" required />
-          <button>Login</button>
-          <Link to="/register">Sign up here</Link>
+          <button>Entrar</button>
+          <Link to="/register">cadastre-se aqui</Link>
         </form>
       </section>
 
