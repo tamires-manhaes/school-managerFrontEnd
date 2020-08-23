@@ -1,0 +1,41 @@
+form {
+  position: relative;
+  width: calc(100% - 80px);
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .inputGroup{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    select{
+      height: 40px;
+      border: none;
+      background: var(--color-box-base);
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+    }
+  }
+
+  button {
+    width: 250px;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: none;
+    background: var(--color-box-base);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+
+    &:hover{
+      background: var(--color-secundary);
+      color: var(--color-box-base);
+    }
+  }
+}
