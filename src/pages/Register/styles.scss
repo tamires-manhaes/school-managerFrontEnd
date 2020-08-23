@@ -1,0 +1,122 @@
+.registerContainer{
+  width: 100vw;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .registerContent{
+    @media(min-width: 992px){
+      height: 80vh;
+    }
+
+    width: 90vw;
+    height: 85vh;
+    padding: 10px;
+  
+    background: var(--color-primary-dark);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .registerWrap {
+      @media(min-width: 992px){
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      width: 100%;
+      height: 60vh;
+      margin-bottom: 20px;
+    
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      section{
+        h1{
+          font-size: 2rem;
+        }
+
+        p{
+          font-size: 1rem;
+        }
+
+        a{
+          transition: color 350ms ease;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row;
+
+          &:hover {
+            color: var(--color-secundary);
+          } 
+        } 
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        input {
+          height: 45px;
+          padding: 5px;
+          border-radius: var(--border-radius);
+          border: none;
+          margin: 5px 0;
+        }
+
+        .changeDataInput{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+
+          label {
+            margin: 0 5px;
+          }
+          
+        }
+
+        .button {
+          width: 200px;
+          height: 40px;
+          border: none;
+          border-radius: var(--border-radius);
+          background: var(--color-input-background);
+          transition: all 350ms ease;
+
+          &:hover{
+            background: var(--color-secundary);
+            color: var(--color-input-background);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 992px){
+  .registerContent{
+    height: 70vh;
+
+    .registerWrap{
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      form input,
+      form .button{
+        height: 30px;
+      }
+    }
+  }
+}
