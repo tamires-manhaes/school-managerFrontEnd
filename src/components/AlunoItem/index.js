@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.css';
+import './styles.scss';
 
 export default function AlunoItem({ matricula, nome, sexo, dataNascimento, cpf }){
   return (
