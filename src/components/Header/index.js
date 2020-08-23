@@ -1,15 +1,10 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 
-import HomeButton from '../../components/HomeButton';
-import LogoutButton from '../../components/LogoutButton';
-
-export default function Header(){
+export default function Header(props){
   return(
     <header>
-      <HomeButton />
-
-      <LogoutButton />
+     {props.children}
     </header>
   )
 }
