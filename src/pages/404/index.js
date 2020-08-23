@@ -7,9 +7,9 @@ export default function Page404(){
   return (
     <div className="page404">
       <h1>
-        Page not found!
+        Página não encontrada!
       </h1>
-      <Link to="/">Voltar a Home</Link>
+      <Link to="/home">Voltar a Home</Link>
     </div>
   )
 }
